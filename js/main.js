@@ -61,7 +61,6 @@ const agregarAlCarrito = (id) => {
     } else {
       const producto = productos.find(producto => producto.id === id);
       carrito.push(producto)
-      localStorage.setItem("carrito", JSON.stringify(carrito));
       Toastify({
         text: "Producto Agregado ✨",
         gravity: "bottom",
@@ -70,6 +69,7 @@ const agregarAlCarrito = (id) => {
         }
       }).showToast();
     }
+   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
 // Ver Carrito
@@ -131,8 +131,8 @@ vaciarCarrito.addEventListener("click", () => {
 })
 const vaciarTodoElCarrito = () => {
       carrito = [];
-      mostrarCarrito();
       localStorage.clear();
+      mostrarCarrito();
 }
 
 
