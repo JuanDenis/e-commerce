@@ -1,0 +1,10 @@
+[
+   {"id": "buzo-01", "titulo": "Buzo Snoopy Naranja", "imagen": "./img/buzos/buzo01.png", "precio": 3000, "cantidad": 1},
+   {"id": "buzo-02", "titulo": "Buzo Snoopy Azul", "imagen": "./img/buzos/buzo02.png", "precio": 3000, "cantidad": 1},
+   {"id": "buzo-03", "titulo": "Buzo Rugrats Reptar", "imagen": "./img/buzos/buzo03.png", "precio": 3000,  "cantidad": 1},
+   {"id": "buzo-04", "titulo": "Buzo Rugrats Angélica", "imagen": "./img/buzos/buzo04.png", "precio": 3000,  "cantidad": 1},
+   {"id": "pantalon-01", "titulo": "Pantalón Rugrats Reptar", "imagen": "./img/pantalones/pantalon-01.jpg", "precio": 1500,  "cantidad": 1},
+   {"id": "pantalon-02", "titulo": "Pantalón Rick and Morty", "imagen": "./img/pantalones/pantalon-02.jpg", "precio": 1500,  "cantidad": 1},
+   {"id": "pantalon-03", "titulo": "Pantalón Rick and Morty", "imagen": "./img/pantalones/pantalon-03.jpg", "precio": 1500, "cantidad": 1},
+   {"id": "pantalon-04", "titulo": "Pantalón Odie & Garfield", "imagen": "./img/pantalones/pantalon-04.jpg", "precio": 1500, "cantidad": 1}
+]

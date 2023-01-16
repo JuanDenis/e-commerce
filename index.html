@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>E-Commerce</title>
+</head>
+<header>
+
+    <div class="logo">
+        <a href="index.html"><span class="texto"><i class="bi bi-house-fill icon"></i>E-Commerce</span></a>
+    </div>
+
+    <ul class="navbar">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a class="active" href="#">Ropa</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+
+    <div>
+        <button class="botonCarrito" id="verCarrito"><i class="bi bi-cart2 iconCarrito"></i>Ver Carrito</button>
+    </div>
+</header>
+
+<body>
+    <div class="container">
+        <div id="contenedorProductos" class="row"></div>
+
+        <h2 class="titulo-carrito">Carrito de Compras</h2>
+        <hr/>
+
+        <div id="contenedorCarrito"></div> 
+
+        <div class="carrito-total">
+            <h3><span id="total"></span></h3>
+            <button class="btnVaciar" id="vaciarCarrito">Vaciar Carrito</button>
+        </div>
+    </div>
+
+    <footer class="text-footer">
+        <span>
+            JUAN DENIS | ALL RIGHTS RESERVED 2022.
+        </span>
+        <li>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </li>
+    </footer>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
