@@ -121,6 +121,8 @@ const eliminarDelCarrito = (id) => {
   const producto = carrito.find(producto => producto.id === id);
   const indice = carrito.indexOf(producto);
   carrito.splice(indice, 1);
+  //Resetear Cantidad al eliminar del carrito
+  producto.cantidad = 1;
   mostrarCarrito();
 }
 
