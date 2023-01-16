@@ -1,5 +1,5 @@
 const contenedorProductos = document.getElementById("contenedorProductos");
-const listadoProductos = "../json/productos.json";
+const listadoProductos = "./json/productos.json";
 let productos = [];
 
 //Fetch
