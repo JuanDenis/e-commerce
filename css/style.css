@@ -8,7 +8,7 @@ body {
 }
 
 /* Navegación */
-header {
+.cabecera {
     width: 100%;
     display: flex;
     padding: 50px;
@@ -71,11 +71,6 @@ header {
     transition: .4s;
     background: #f2f2f2;
 }
-.card:hover{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
-    0 3px 6px rgba(0,0,0,0.23);
-    transform: translate(0px, -8px);
-}
 .card img{
     width: 260px;
     height: 260px;
@@ -131,8 +126,9 @@ header {
     border: 0;
     background-color: #D33E43;
     color: white;
-    padding: 1rem;
-    border-radius: .5rem;
+    padding: .75rem;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
     margin-top: 15px;
     
 }
@@ -145,7 +141,6 @@ header {
     margin-right: 20px;
     font-size: 1rem;
 }
-
 /* Botones */
 .btn {
     text-align: center;
@@ -170,8 +165,7 @@ header {
     border: 0;
     cursor: pointer;
     margin-top: 5px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: .5rem;
     background: #D33E43;
 
 }
@@ -202,3 +196,61 @@ header {
 .text-footer li {
     list-style: none;
 }
+
+@media (min-width: 600px) {
+    .card:hover{
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+        0 3px 6px rgba(0,0,0,0.23);
+        transform: translate(0px, -8px);
+    }
+}
+
+@media (max-width: 600px) {
+    .cabecera {
+     flex-direction: column;
+    }
+    .navbar {
+     flex-direction: column;
+    }
+   .card {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 80%;
+   }
+   .card img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+   }
+   .carrito-producto {
+    width: 95%;
+   }
+   .carrito-producto-titulo {
+    margin-right: 15px;
+   }
+   .carrito-producto-cantidad {
+    margin: 15px;
+   }
+   .carrito-producto-precio {
+    margin: 15px;
+   }
+   .text-footer {
+    flex-direction: column-reverse;
+   }
+   .text-footer span {
+    margin-top: 15px;
+   }
+}
+
+@media (max-width: 1024px) {
+    .cabecera {
+        flex-direction: column;
+    }
+    .card img {
+        margin: 0 auto;
+    }
+    .carrito-producto {
+        width: 90vw;
+    }
+}
+
