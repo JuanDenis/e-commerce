@@ -1,0 +1,24 @@
+.text-footer {
+    padding: 30px;
+    background-color: #212529;
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    a{
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+    }
+    li{
+        list-style: none;
+    }
+}
+
+//Mediaquery
+@media (min-width: 768px) {
+    .text-footer a:hover {
+        color: #7a7a7a;
+        transition: all .50s ease;
+    }
+}
